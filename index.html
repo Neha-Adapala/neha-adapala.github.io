@@ -1,0 +1,385 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Raleway&family=Tajawal&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque&family=PT+Serif&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap" rel="stylesheet">
+
+<style>
+    body{
+        background-color: #355c7d;
+        color: #f8b195;
+
+    }
+    .card {
+        /* transition: 0.3s; */
+        width: 50%;
+        /* background-color: rgba(238,238,238, 1); */
+        background-color: transparent;
+        /* border-radius: 0px; */
+        border: none;
+        float: left;
+        padding-right: 100px;
+        padding-top: 25px;
+    }
+    .card2 {
+        width: 50%;
+        border: none;
+        float: left;
+        margin: auto;
+        padding-left: 100px;
+        
+    }
+
+    .bottom-right.inView {
+        opacity: 1;
+        -webkit-transform: translateY(0px) rotate(0deg) translateZ(0);
+        transform: translateY(0px) rotate(0deg) translateZ(0);
+        margin-top: 20px;
+    }
+    .inView {
+        opacity: 1;
+        -webkit-transform: translateY(0px) rotate(0deg) translateZ(0);
+        transform: translateY(0px) rotate(0deg) translateZ(0);
+        margin-top: 20px;
+    }
+    section {
+        padding:20px;
+        margin-top: 20px;
+    }
+
+    .card1 {
+        /* transition: 0.3s;
+        width: 200px;
+        height: 200px;
+        background-color: rgba(238,238,238, 0.8);
+        margin-left: 550px;
+        height:400px; */
+        transition: 0.3s;
+        width: 100%;
+        background-color: rgba(238,238,238, 0.8);
+        
+        -webkit-transform: translateY(50px) rotate(-5deg) translateZ(0);
+        transform: translateY(50px) rotate(-5deg) translateZ(0);
+        -webkit-transition-delay: .9s;
+        -o-transition-delay: .9s;
+        transition-delay: .9s;
+        -webkit-transition: 1s;
+        -o-transition: 1s;
+        transition: 1s;
+        opacity: 0;
+    }
+    img{
+        object-fit: cover;
+    }
+
+    .container {
+        padding: 0px;
+
+    }
+
+
+    .sidenav {
+        height: 100%;
+        width: 300px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        padding-top: 50px;
+        font-family: 'Darker Grotesque';
+
+        
+    }
+
+    .sidenav a {
+        padding: 6px 6px 6px 32px;
+        text-decoration: none;
+        text-align: right;
+        font-size: 25px;
+        color: #eeeeee; 
+        display: block;
+        font-size:medium;
+    }
+
+    .sidenav a:hover {
+        color: #0c343d;
+    }
+
+    @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+    }
+
+    .image{
+        margin-left: 1000px;
+    }
+    #workshops{
+        display: none;
+    }
+
+    .toggles{
+        background-color: transparent;
+        border-width: 0;
+        padding: 0;
+        font-family: 'Darker Grotesque'; 
+        font-size:large;
+        color:#eeeeee;
+        align-items: right;
+
+    }
+    .contents{
+        background-color: transparent;
+        border-width: 0;
+        padding: 0;
+        font-family: 'Darker Grotesque'; 
+        font-size:large;
+        color: #f8b195;
+        display: block;
+
+    }
+    .contents:hover{
+        color:bisque;
+    }
+
+
+</style>
+</head>
+<body>
+
+<!-- <div class="sidenav">
+    <a href="#">Home</a>
+    <a href="#">About Us</a>
+    <a href="#">How to Get Involved</a>
+    <a href="#">News + Resources</a>
+    <a href="#" onclick="workshops()">Workshops</a>
+    <a href="#" onclick="events()">Events</a>
+</div> -->
+
+<div id="workshops">
+<h2>Home</h2>
+
+
+
+<div >
+    
+    <div class="card1 bottom-right" style="border: none; margin-top: 20px;">
+      <img src="icebreaker.jpg" class="card-img-top" >
+    </div>
+    
+    <div class="card1 bottom-right" style="border: none; margin-top: 20px;">
+        <img src="winner.jpg" class="card-img-top" >
+    </div>
+    <div class="card1 bottom-right" style="border: none; margin-top: 20px;">
+        <img src="matheace.jpg" class="card-img-top" >
+    </div>
+    <div class="card1 bottom-right" style="border: none; margin-top: 20px;">
+        <img src="activity.jpg" class="card-img-top">
+      </div>
+  </div>
+
+</div>
+
+
+
+
+<!-- <div class="card"> -->
+  <div class="container" style="padding-top: 70px; padding-left: 70px;padding-right:70px; padding-bottom:50px;">
+    <h1 style="font-family: 'PT Serif'; text-align: center; margin-bottom: 20px; font-size: 100px;"><b>Neha Adapala</b></h1> 
+    <p style="font-family: 'Darker Grotesque'; font-size:medium; text-align: center;">Learn more.</p> 
+  </div>
+<!-- </div> -->
+
+<div class="card-deck">
+  <div class="card" style="margin-top: 20px; text-align: right;">
+      <div class="container" style="padding-left: 170px;padding-right:0px; padding-bottom:50px">
+        <h3 style="font-family: 'PT Serif'; text-align: right; margin-bottom: 20px;"><b>Projects</b></h3> 
+
+
+        <h5 style="font-family: 'PT Serif'; text-align: right; margin-bottom: 20px; margin-top: 25px;"><b>Neurotechnology</b></h5> 
+
+        <!-- <p style="font-family: 'Darker Grotesque'; font-size:small;">A curious 16-year-old.</p>  -->
+        <button class="toggles" >Changing the volume of your computer with your brain</button>
+        <div id="contents">
+          <a  class="contents" href="https://medium.com/@neha.adapala/controlling-your-computers-volume-with-your-brain-4755afbf363d"> Article </a>
+          <a  class="contents" href="https://youtu.be/_nHZXCZ_J-A?si=s5og8ffDaXQH4E8x"> Video </a>
+        </div>
+        <button class="toggles" >Understanding what your current brain state is</button>
+        <div id="contents">
+          <a  class="contents" href="https://medium.com/@neha.adapala/deciphering-secret-signals-from-your-brain-with-bcis-c472ba1ac15e"> Article </a>
+          <a  class="contents" href="https://youtu.be/APdw5fQ6QTY?si=qqUrBK-LSH8686XS"> Video </a>
+        </div>
+        <button class="toggles" >Creating interactive art with your brain</button>
+        <div id="contents">
+          <a class="contents" href="https://youtu.be/jMpCTAAN6Sw?si=QtVBfQwkXHoQKHpC"> Video </a>
+        <button class="toggles" >Using BCIs for emotions</button>
+        <div id="contents">
+          <a class="contents" href="https://medium.com/@neha.adapala/using-bcis-for-emotions-2a30681dee76"> Article </a>
+        </div>
+
+
+        <h5 style="font-family: 'PT Serif'; text-align: right; margin-bottom: 20px;margin-top: 25px;"><b>AI</b></h5> 
+
+        <button class="toggles" >Discrete ways to call for help in emergencies</button>
+        <div id="contents">
+          <a  class="contents" href="https://github.com/Neha-Adapala/Help-Web"> Github repo </a>
+        </div>
+        
+        <h5 style="font-family: 'PT Serif'; text-align: right; margin-bottom: 20px;margin-top: 25px;"><b>AI Literacy</b></h5> 
+        <a  class="contents" href="https://youth-in-ai.github.io/#"> Co-founded youth group + Created Website </a>
+        <a  class="contents" href="https://weandai.org/team/"> Youth Ambassador for We and AI </a>
+        <a  class="contents" href="https://aifringe.org/events/responsible-ai-a-policy-approach-to-bias-eradication"> AI Fringe Workshop </a>
+        <a  class="contents" href="https://www.aisocietyforum.net/programme"> Truth vs Tech: Tackling Misinformation and Deepfakes </a>
+        <a  class="contents" href="https://www.non-trivial.org/winners"> Non-Trivial Fellowship 3rd Place </a>
+        
+
+        <h5 style="font-family: 'PT Serif'; text-align: right; margin-bottom: 20px;margin-top: 25px;"><b>Other</b></h5> 
+        <a  class="contents" href="https://weandai.org/team/"> Exploring Technology + Art </a>
+        <a  class="contents" href="https://aifringe.org/events/responsible-ai-a-policy-approach-to-bias-eradication"> Carpool Website </a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="card2" style="margin-top: 20px;">
+  <!-- <div class="card2" style="margin-top: 20px;"> -->
+    <div class="container">
+      <h3 style="font-family: 'PT Serif'; text-align: left; margin-bottom: 20px; margin-top: 25px;"><b>Awards</b></h3> 
+      <button class="toggles" >TechGirl 2023 - Winner</button>
+      <div id="contents">
+        <a  class="contents" href="https://medium.com/@neha.adapala/using-bcis-for-edtech-techgirl-2023-448c14510e66"> Article 1 </a>
+        <a  class="contents" href="https://medium.com/@neha.adapala/attending-techgirl-mentorship-afternoon-865f8a064a15"> Article 2 </a>
+      </div>
+      <button class="toggles" >Non-Trivial Fellowship - 3rd Place</button>
+      <a  class="contents" href="https://www.non-trivial.org/winners"> Submission Video </a>
+      <button  class="toggles" >Codesec - National Finalist + Runner-Up</button>
+      <a  class="contents" href="https://github.com/hh-heart/doctor-who/tree/main"> Round 1 (Local) - appointment scheduling system </a>
+      <a  class="contents" href="https://github.com/Neha-Adapala/Carpool"> Round 2 (National) - carpool website</a>
+    </div>
+  <!-- </div> -->
+
+  <!-- <div class="card2" style="margin-top: 20px;"> -->
+    <div class="container" >
+      <h3 style="font-family: 'PT Serif'; text-align: left; margin-bottom: 20px; margin-top: 25px;"><b>Newsletters</b></h3> 
+      <a class="contents" href="https://nehaadapala.substack.com/p/december-helping-the-world-and-myself">December: Helping the world and myself</a>
+      <a class="contents" href="https://nehaadapala.substack.com/p/november-learning-failing-and-learning">November: Learning, Failing and Learning</a>
+      <a class="contents" href="https://nehaadapala.substack.com/p/october-making-changes-for-the-better">October: Making Changes for the Better</a>
+      <a class="contents" href="https://nehaadapala.substack.com/p/september-wrapping-up-a-month-of?utm_source=profile&utm_medium=reader2">September: Wrapping Up a Month of Beginnings</a>
+    </div>
+  <!-- </div> -->
+
+  <!-- <div class="card2" style="margin-top: 20px;"> -->
+    <div class="container" >
+      <h3 style="font-family: 'PT Serif'; text-align: left; margin-bottom: 20px; margin-top: 25px;"><b>In The News</b></h3> 
+      <a class="contents" href="https://www.standard.co.uk/business/young-female-stars-crowned-winners-of-2023-techgirl-awards-hot-topic-b1081874.html">Young female stars crowned winners of 2023 TechGirl awards</a></br>
+      <a class="contents" href="https://www.meettheleader.com/all-news/techgirl-winners-announced">DRIVING DIVERSITY IN TECH: TECHGIRL WINNERS ANNOUNCED</a>
+     </div>
+  <!-- </div> -->
+
+  <!-- <div class="card" style="margin-top: 20px;">
+    <div class="container" style="padding-top: 50px; padding-left: 70px;padding-right:70px; padding-bottom:50px">
+      <h3 style="font-family: 'PT Serif'; text-align: center; margin-bottom: 20px;"><b>READS</b></h3> 
+     </div>
+  </div>
+
+  <div class="card" style="margin-top: 20px;">
+    <div class="container" style="padding-top: 50px; padding-left: 70px;padding-right:70px; padding-bottom:50px">
+      <h3 style="font-family: 'PT Serif'; text-align: center; margin-bottom: 20px;"><b>PODCAST FAVOURITES</b></h3> 
+     </div>
+  </div>
+
+  <div class="card" style="margin-top: 20px;">
+    <div class="container" style="padding-top: 50px; padding-left: 70px;padding-right:70px; padding-bottom:50px">
+      <h3 style="font-family: 'PT Serif'; text-align: center; margin-bottom: 20px;"><b>WORKS IN PROGRESS</b></h3> 
+     </div>
+  </div> -->
+
+  <!-- <div class="card2" style="margin-top: 20px;"> -->
+    <div class="container"  style="padding-left: 50px;background-color: rgba(8, 7, 52, 0.8); padding-top: 10px; padding-bottom: 20px; margin-top: 25px;">
+      <h3 style="font-family: 'PT Serif'; text-align: left; margin-bottom: 20px; margin-top: 25px;"><b>CONTACT ME</b></h3> 
+      <a class="contents" href="mailto:neha.adapala@gmail.com" style="text-decoration: underline;">Email : neha.adapala@gmail.com</a>
+      <a class="contents" href="https://www.linkedin.com/in/neha-adapala-7b2a56231/" style="text-decoration: underline;">LinkedIn</a>
+      <a class="contents" href="https://twitter.com/neha_adapala" style="text-decoration: underline;">X</a>
+     </div>
+  <!-- </div> -->
+  <!-- </div> -->
+
+
+  
+  <!-- <div >
+      
+      <div class="card1 bottom-right" style="border: none; margin-top: 20px;">
+        <img src="panel1.jpg" class="card-img-top" >
+      </div>
+      
+      <div class="card1 bottom-right" style="border: none; margin-top: 20px;">
+          <img src="panel2.jpg" class="card-img-top" >
+      </div>
+      <div class="card1 bottom-right" style="border: none; margin-top: 20px;">
+          <img src="panel3.jpg" class="card-img-top" >
+      </div>
+    </div> -->
+  
+  </div> 
+
+
+</div>
+<!-- <div id="events">
+
+
+    <div class="card">
+      <div class="container" style="padding-top: 50px; padding-left: 70px;padding-right:70px; padding-bottom:50px;">
+        <h4 style="font-family: 'PT Serif'; text-align: center; margin-bottom: 20px;"><b>Hi, I'm Neha</b></h4> 
+        <p style="font-family: 'Darker Grotesque'; font-size:small;">A curious 16-year-old.</p> 
+      </div>
+    </div>
+      
+      </div> 
+    
+    </div> -->
+
+</body>
+<script>
+    let elementsArray = document.querySelectorAll(".card1");
+    console.log(elementsArray);
+    window.addEventListener('scroll', fadeIn ); 
+    function fadeIn() {
+        for (var i = 0; i < elementsArray.length; i++) {
+            var elem = elementsArray[i]
+            var distInView = elem.getBoundingClientRect().top - window.innerHeight + 20;
+            if (distInView < 0) {
+                elem.classList.add("inView");
+            } else {
+                elem.classList.remove("inView");
+            }
+        }
+    }
+    fadeIn();
+
+    function workshops(){
+        document.getElementById('events').style.display='none';
+        document.getElementById('workshops').style.display='block';
+    }
+    function events(){
+        document.getElementById('workshops').style.display='none';
+        document.getElementById('events').style.display='block';
+    }
+
+    function toggle() {
+        var x = document.getElementById("contents");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+</script>
